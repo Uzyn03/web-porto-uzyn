@@ -1,20 +1,20 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import About from "./components/About.vue";
+import Footer from "./components/Ui/Footer.vue";
+import Header from "./components/Ui/Header.vue";
+
+const isiPesan = "Kanjut";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <section class="min-h-svh">
+      <h1>Hello World</h1>
+    </section>
   </main>
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 <style scoped>
