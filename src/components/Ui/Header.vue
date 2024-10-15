@@ -10,13 +10,20 @@
         <div>
           <a
             href="#"
+            @click.prevent="scrollTo('Home')"
             class="text-gray-800 hover:bg-teal-500 hover:text-slate-50 px-3 py-1 rounded-lg font-semibold"
             >Home</a
           >
           <a
             href="#"
+            @click.prevent="scrollTo('About')"
             class="text-gray-800 hover:bg-teal-500 hover:text-slate-50 px-3 py-1 rounded-lg font-semibold"
             >About</a
+          >
+          <a
+            href="#"
+            class="text-gray-800 hover:bg-teal-500 hover:text-slate-50 px-3 py-1 rounded-lg font-semibold"
+            >Project</a
           >
           <a
             href="#"
@@ -29,4 +36,22 @@
   </header>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    scrollTo(section) {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  },
+};
+</script>
+
+<style scoped>
+a {
+  margin: 0 15px;
+  cursor: pointer;
+}
+</style>

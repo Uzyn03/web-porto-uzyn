@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full h-screen flex items-center">
+  <section id="Home" class="w-full h-screen flex items-center">
     <div
       class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between"
     >
@@ -20,7 +20,7 @@
       </div>
 
       <!-- Gambar di Sebelah Kanan -->
-      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
         <img
           src="/src/assets/uzynbg.png"
           alt="Hero Image"
